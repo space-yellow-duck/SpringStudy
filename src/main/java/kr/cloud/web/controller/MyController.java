@@ -32,6 +32,13 @@ public class MyController {
 	
 	// 기능 단위로 메서드 생성
 	
+	@GetMapping("/goChat")
+	public String goChat() {
+		return "chat";
+	}
+	
+	
+	
 	// 글 작성하기
 	// step1: board.jsp 에서 버튼을 클릭하면 goInsert로 url요청한다.
 	//			-> goInsert요청을 받았을 때, boardInsert.jsp로 이동!
