@@ -58,6 +58,7 @@
                      <td>${result.count}</td>
                   </tr>
                </table>
+               <!-- result.idx를 안쓰고 그냥 idx를 사용했는데 왜 작동이 될까? -->
                <button onclick = "location.href = '${cpath}/boardDelete?idx=${idx}'" type="button" class="btn btn-danger">삭제</button>
             </div>
          </div>

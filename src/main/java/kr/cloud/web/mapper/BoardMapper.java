@@ -2,6 +2,7 @@ package kr.cloud.web.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 
 import kr.cloud.web.entity.Board;
@@ -19,6 +20,7 @@ public interface BoardMapper {
 	
 	public int boardInsert(Board board);
 	
+	@Delete("DELETE FROM BOARD WHERE IDX = #{idx}")
 	public int boardDelete(int idx);
 	
 }
