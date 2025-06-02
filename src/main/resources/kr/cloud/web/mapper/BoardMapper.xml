@@ -29,4 +29,8 @@
 	<update id="boardInsert" parameterType = "kr.cloud.web.entity.Board">
 		INSERT INTO board(WRITER,TITLE,CONTENT,FILE) VALUES(#{writer},#{title},#{content},#{file})
 	</update>
+	
+	<delete id="boardDelete">
+		DELETE FROM board where IDX = #{idx}
+	</delete>
 </mapper>

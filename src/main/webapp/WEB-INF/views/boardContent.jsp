@@ -58,6 +58,7 @@
                      <td>${result.count}</td>
                   </tr>
                </table>
+               <button onclick = "location.href = '${cpath}/boardDelete?idx=${idx}'" type="button" class="btn btn-danger">삭제</button>
             </div>
          </div>
       </div>
